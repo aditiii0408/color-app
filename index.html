@@ -4,16 +4,17 @@
 <style>
       *{text-align:center;font-size:50px;}
       h1 {background-color:orange; font-color:white;}
-      input {height:100px;width:150px;}
+      .btn {height:100px ; width:25%; border-radius:20px;}
+      .btn:hover {color:white ; background-color:black;}
       
 </style>
 </head>
  <body>
        <h1> Color App </h1>
 <form onsubmit="show()">
-<input type="submit" value="Red" />
-<input type="submit" value="Green" />
-<input type="submit" value="Blue" />
+<input type="submit" value="Red" class="btn" />
+<input type="submit" value="Green" class="btn" />
+<input type="submit" value="Blue" class="btn" />
 </form>
 
        <h2 id="msg" />
@@ -30,12 +31,12 @@
      
      if (action === "Green")
      {
-        document.body.style.background="green";
+        document.body.style.background="lightgreen";
      }
 
      if (action === "Blue")
      {
-        document.body.style.background="blue";
+        document.body.style.background="lightblue";
      }
 
 
